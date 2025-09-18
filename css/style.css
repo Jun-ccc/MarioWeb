@@ -1,0 +1,495 @@
+@charset "UTF-8";
+/* 編碼一定要在第一行 */
+@import url("https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap");
+/* google font 一定要在第二行 */
+/* CSS變數 */
+:root {
+  /* 灰階 */
+  --deep: #444;
+  --dark: #666;
+  --grey: #999;
+  --light: #f1f1f1;
+  /* 背景 */
+  --bg-1: #f2edf0;
+  --bg-2: #e6ece5;
+  --bg-3: #ecf0f4;
+  /* 輔助 */
+  --lesser-1: #f3e4e4;
+  --lesser-2: #efdbdb;
+  --lesser-3: #cdaaab;
+  --lesser-4: #8f6d6b;
+  /* 透明 */
+  --alpha-w-20: rgba(255, 255, 255, 0.2);
+  --alpha-w-40: rgba(255, 255, 255, 0.4);
+  --alpha-b-20: rgba(255, 255, 255, 0.6);
+  /* 尺寸 */
+  --ex-: 99999;
+}
+
+/* css reset */
+* {
+  box-sizing: border-box;
+  /* 不累加內距及邊距 */
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+/* 重置字體 */
+/* 字體皆加""一定沒問題*/
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+/* 重置標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* 重置列表 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 重置圖片 */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* 重置連接 */
+a {
+  display: block;
+  /* inline不支援尺寸設定，但a常拿來共用 */
+  color: #666;
+  text-decoration: none;
+  /* 取消預設底線 */
+  /* 設定在元素本身，不要設定在hover上，
+  設定在hover上及未停留滿動畫時間時，滑鼠離開沒有動畫 */
+  transition: 0.4s;
+}
+
+section, #switch .list-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes brick {
+  0% {
+    top: 5vh;
+    right: -120%;
+  }
+  10% {
+    top: 5vh;
+    right: -20%;
+  }
+  20% {
+    top: 5vh;
+    right: -20%;
+  }
+  30% {
+    top: 5vh;
+    right: -120%;
+  }
+  100% {
+    top: 5vh;
+    right: -120%;
+  }
+}
+@keyframes luigi {
+  0% {
+    top: 100vh;
+    right: 5%;
+  }
+  10% {
+    top: 25vh;
+    right: 5%;
+  }
+  20% {
+    top: 25vh;
+    right: 5%;
+  }
+  30% {
+    top: 100vh;
+    right: 5%;
+  }
+  100% {
+    top: 100vh;
+    right: 5%;
+  }
+}
+@keyframes mario1 {
+  0% {
+    top: 100vh;
+    right: -5%;
+  }
+  10% {
+    top: 15vh;
+    left: -5%;
+  }
+  20% {
+    top: 15vh;
+    left: -5%;
+  }
+  30% {
+    top: 100vh;
+    right: -5%;
+  }
+  100% {
+    top: 100vh;
+    right: -5%;
+  }
+}
+@keyframes pipe {
+  0% {
+    top: 100vh;
+    right: 0;
+  }
+  10% {
+    top: 5vh;
+    right: 0;
+  }
+  20% {
+    top: 5vh;
+    right: 0;
+  }
+  30% {
+    top: 100vh;
+    right: 0;
+  }
+  100% {
+    top: 100vh;
+    right: 0;
+  }
+}
+@keyframes peach {
+  0% {
+    right: 20%;
+    top: 100vh;
+  }
+  10% {
+    right: 20%;
+    top: 30vh;
+  }
+  20% {
+    right: 20%;
+    top: 30vh;
+  }
+  30% {
+    right: 20%;
+    top: 100vh;
+  }
+  100% {
+    right: 20%;
+    top: 100vh;
+  }
+}
+@keyframes mario2 {
+  0% {
+    top: 100vh;
+    left: -10%;
+  }
+  10% {
+    top: 10vh;
+    left: -10%;
+  }
+  20% {
+    top: 10vh;
+    left: -10%;
+  }
+  30% {
+    top: 100vh;
+    left: -10%;
+  }
+  100% {
+    top: 100vh;
+    left: -10%;
+  }
+}
+@keyframes star {
+  0% {
+    right: 5%;
+    top: 100vh;
+  }
+  10% {
+    right: 5%;
+    top: 5vh;
+  }
+  20% {
+    right: 5%;
+    top: 5vh;
+  }
+  30% {
+    right: 5%;
+    top: 100vh;
+  }
+  100% {
+    right: 5%;
+    top: 100vh;
+  }
+}
+@keyframes toad {
+  0% {
+    right: 20%;
+    top: 100vh;
+  }
+  10% {
+    right: 20%;
+    top: 30vh;
+  }
+  20% {
+    right: 20%;
+    top: 30vh;
+  }
+  30% {
+    right: 20%;
+    top: 100vh;
+  }
+  100% {
+    right: 20%;
+    top: 100vh;
+  }
+}
+@keyframes mario3 {
+  0% {
+    top: 100vh;
+    left: -20%;
+  }
+  10% {
+    top: 20vh;
+    left: -20%;
+  }
+  20% {
+    top: 20vh;
+    left: -20%;
+  }
+  30% {
+    top: 100vh;
+    left: -20%;
+  }
+  100% {
+    top: 100vh;
+    left: -20%;
+  }
+}
+body {
+  font-family: "Catamaran", sans-serif;
+  font-optical-sizing: auto;
+  color: #fefeff;
+}
+
+section {
+  color: #fefeff;
+  height: 100vh;
+  padding: 0 10%;
+  gap: 30px;
+}
+
+#banner {
+  background-image: url(../images/bg-pattern-logos.png), linear-gradient(#e70112 15%, #b20722 75%);
+  padding-left: 10%;
+  overflow: hidden;
+  /* 浮動物件超過視窗，就要給溢位隱藏，才不會出現卷軸 */
+}
+#banner > div {
+  flex: 1;
+}
+#banner .content h1 {
+  font-size: 11rem;
+  font-weight: 900;
+  line-height: 0.8;
+  letter-spacing: 2px;
+}
+#banner .content h1 span {
+  font-size: 2rem;
+}
+#banner .content p {
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+#banner .photo {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#banner .photo figure {
+  position: absolute;
+}
+#banner .photo .banner1 figure:nth-child(1) {
+  top: 5vh;
+  right: -20%;
+  width: 85%;
+  animation: brick 12s 0.5s both infinite;
+}
+#banner .photo .banner1 figure:nth-child(2) {
+  width: 50%;
+  top: 100vh;
+  right: 5%;
+  animation: luigi 12s 0.35s both infinite;
+}
+#banner .photo .banner1 figure:nth-child(3) {
+  width: 60%;
+  top: 100vh;
+  left: -5%;
+  animation: mario1 12s 0s both infinite;
+}
+#banner .photo .banner2 figure:nth-child(1) {
+  top: 5vh;
+  right: 0;
+  animation: pipe 12s 4.5s both infinite;
+}
+#banner .photo .banner2 figure:nth-child(2) {
+  width: 45%;
+  right: 20%;
+  top: 30vh;
+  animation: peach 12s 4.35s both infinite;
+}
+#banner .photo .banner2 figure:nth-child(3) {
+  width: 65%;
+  top: 10vh;
+  left: -10%;
+  animation: mario2 12s 4s both infinite;
+}
+#banner .photo .banner3 figure:nth-child(1) {
+  width: 55%;
+  right: 5%;
+  top: 5vh;
+  animation: star 12s 8.5s both infinite;
+}
+#banner .photo .banner3 figure:nth-child(2) {
+  width: 40%;
+  right: 20%;
+  top: 30vh;
+  animation: toad 12s 8.35s both infinite;
+}
+#banner .photo .banner3 figure:nth-child(3) {
+  width: 85%;
+  top: 20vh;
+  left: -20%;
+  animation: mario3 12s 8s both infinite;
+}
+
+#switch .list-box {
+  width: 80%;
+  gap: 30px;
+}
+#switch .list-box > div {
+  flex: 1;
+  background-color: #393a3a;
+  border-radius: 20px;
+}
+#switch .list-box figure {
+  position: relative;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+#switch .list-box figure img {
+  position: absolute;
+  width: 90%;
+  top: -15vh;
+  transform: translateZ(50px);
+}
+#switch .list-box .content {
+  height: 8.75rem;
+  padding: 30px;
+}
+#switch .list-box .content h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}

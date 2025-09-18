@@ -1,0 +1,251 @@
+// banner1
+@keyframes brick {
+
+    // 0s 外面等
+    0% {
+        top: 5vh;
+        right: -120%;
+    }
+
+    // 1.2s 結果
+    10% {
+        top: 5vh;
+        right: -20%;
+    }
+
+    // 2.4s 結果
+    20% {
+        top: 5vh;
+        right: -20%;
+    }
+
+    // 3.6s 外面等
+    30% {
+        top: 5vh;
+        right: -120%;
+    }
+
+    // 12s 外面等
+    100% {
+        top: 5vh;
+        right: -120%;
+    }
+}
+
+@keyframes luigi {
+    0% {
+        top: 100vh;
+        right: 5%;
+    }
+
+    10% {
+        top: 25vh;
+        right: 5%;
+    }
+
+    20% {
+        top: 25vh;
+        right: 5%;
+    }
+
+    30% {
+        top: 100vh;
+        right: 5%;
+    }
+
+    100% {
+        top: 100vh;
+        right: 5%;
+    }
+}
+
+@keyframes mario1 {
+    0% {
+        top: 100vh;
+        right: -5%;
+    }
+
+    10% {
+        top: 15vh;
+        left: -5%;
+    }
+
+    20% {
+        top: 15vh;
+        left: -5%;
+    }
+
+    30% {
+        top: 100vh;
+        right: -5%;
+    }
+
+    100% {
+        top: 100vh;
+        right: -5%;
+    }
+}
+
+// banner2
+@keyframes pipe {
+    0% {
+        top: 100vh;
+        right: 0;
+    }
+
+    10% {
+        top: 5vh;
+        right: 0;
+    }
+
+    20% {
+        top: 5vh;
+        right: 0;
+    }
+
+    30% {
+        top: 100vh;
+        right: 0;
+    }
+
+    100% {
+        top: 100vh;
+        right: 0;
+    }
+}
+
+@keyframes peach {
+    0% {
+        right: 20%;
+        top: 100vh;
+    }
+
+    10% {
+        right: 20%;
+        top: 30vh;
+    }
+
+    20% {
+        right: 20%;
+        top: 30vh;
+    }
+
+    30% {
+        right: 20%;
+        top: 100vh;
+    }
+
+    100% {
+        right: 20%;
+        top: 100vh;
+    }
+}
+
+@keyframes mario2 {
+    0% {
+        top: 100vh;
+        left: -10%;
+    }
+
+    10% {
+        top: 10vh;
+        left: -10%;
+    }
+
+    20% {
+        top: 10vh;
+        left: -10%;
+    }
+
+    30% {
+        top: 100vh;
+        left: -10%;
+    }
+
+    100% {
+        top: 100vh;
+        left: -10%;
+    }
+}
+
+// banner3
+@keyframes star {
+    0% {
+        right: 5%;
+        top: 100vh;
+    }
+
+    10% {
+        right: 5%;
+        top: 5vh;
+    }
+
+    20% {
+        right: 5%;
+        top: 5vh;
+    }
+
+    30% {
+        right: 5%;
+        top: 100vh;
+    }
+
+    100% {
+        right: 5%;
+        top: 100vh;
+    }
+}
+
+@keyframes toad {
+    0% {
+        right: 20%;
+        top: 100vh;
+    }
+
+    10% {
+        right: 20%;
+        top: 30vh;
+    }
+
+    20% {
+        right: 20%;
+        top: 30vh;
+    }
+
+    30% {
+        right: 20%;
+        top: 100vh;
+    }
+
+    100% {
+        right: 20%;
+        top: 100vh;
+    }
+}
+
+@keyframes mario3 {
+    0% {
+        top: 100vh;
+        left: -20%;
+    }
+
+    10% {
+        top: 20vh;
+        left: -20%;
+    }
+
+    20% {
+        top: 20vh;
+        left: -20%;
+    }
+
+    30% {
+        top: 100vh;
+        left: -20%;
+    }
+
+    100% {
+        top: 100vh;
+        left: -20%;
+    }
+}

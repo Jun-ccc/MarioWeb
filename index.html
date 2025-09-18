@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The official home of Super Mario - Home</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <!-- banner -->
+        <section id="banner">
+
+            <!-- 內容 -->
+            <div class="content">
+                <h1><span>Official home of</span><br>Mario</h1>
+                <p>If you’re a Mario fan—or even if you’ve just found out about him today—you’ve come to the right
+                    place! Learn everything there is to know about that multitalented, mustached marvel, and check out
+                    the latest news, videos, and more.</p>
+                <a href="">Meet Mario!</a>
+            </div>
+
+            <!-- 動態圖片 -->
+            <div class="photo">
+                <div class="banner1">
+                    <figure><img src="./images/banner1-brick-row.png" alt=""></figure>
+                    <figure><img src="./images/banner1-luigi.png" alt=""></figure>
+                    <figure><img src="./images/banner1-mario.png" alt=""></figure>
+                </div>
+                <div class="banner2">
+                    <figure><img src="./images/banner2-pipe.png" alt=""></figure>
+                    <figure><img src="./images/banner2-peach.png" alt=""></figure>
+                    <figure><img src="./images/banner2-mario.png" alt=""></figure>
+                </div>
+                <div class="banner3">
+                    <figure><img src="./images/banner3-star.png" alt=""></figure>
+                    <figure><img src="./images/banner3-toad.png" alt=""></figure>
+                    <figure><img src="./images/banner3-mario.png" alt=""></figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- 卡片區域 -->
+        <section id="switch">
+            <div class="list-box">
+                <div class="card-item1">
+                    <figure><img src="./images/mario_1.png" alt=""></figure>
+                    <div class="content">
+                        <h2>Mario Kart™ 8 Deluxe</h2>
+                        <p>Race with Mario and friends anytime, anywhere!</p>
+                    </div>
+                </div>
+                <div class="card-item2">
+                    <figure><img src="./images/mario_2.png" alt=""></figure>
+                    <div class="content">
+                        <h2>Mario Kart™ 8 Deluxe</h2>
+                        <p>Race with Mario and friends anytime, anywhere!</p>
+                    </div>
+                </div>
+                <div class="card-item3">
+                    <figure><img src="./images/mario_3.png" alt=""></figure>
+                    <div class="content">
+                        <h2>Mario Kart™ 8 Deluxe</h2>
+                        <p>Race with Mario and friends anytime, anywhere!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <!-- jQuery 原生碼 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!--3D傾斜 vanilla-tilt.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <!-- 卡片1 動態 -->
+    <script>
+        VanillaTilt.init(document.querySelector(".card-item1"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+
+    <!-- 卡片2 動態 -->
+    <script>
+        VanillaTilt.init(document.querySelector(".card-item2"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+
+    <!-- 卡片3 動態 -->
+    <script>
+        VanillaTilt.init(document.querySelector(".card-item3"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+
+</body>
+
+</html>
